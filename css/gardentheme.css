@@ -1,0 +1,270 @@
+/*
+CSS for Barrytheme
+*/
+
+
+/* There are the custom styles for the theme. I've tried to exclusively use the bootstrap helper classes where possible but some elements will require a little custom styling */
+
+body.custom-background{
+	background-attachment: fixed!important;
+}
+
+/*----------------------------------------- */
+/*--------------FONT STYLING--------------- */
+/*----------------------------------------- */
+
+h1,h2,h3,h4,h5,h6,p,small,ul,li{
+	color: #333;
+}
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*-----------NAVIGATION STYLING------------ */
+/*----------------------------------------- */
+
+.navbar{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.navbar-collapse{
+	padding-left: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.bg-darker{
+	background-color: #222222;
+}
+
+.bt-navbar{
+	z-index: 1;
+}
+
+
+.menu-row{
+	margin-bottom: 2em;
+}
+
+.dropdown-menu{
+	background-color: rgba(0,0,0,.60);
+}
+
+.dropdown-item{
+	color: #fff;
+}
+
+.form-inline{
+	margin-left: 2em;
+	
+}
+
+
+
+/*----------------------------------------- */
+/*-------------BADGE STYLING--------------- */
+/*----------------------------------------- */
+
+.badge{
+	margin-top: 0.5em;
+	font-weight: 300;
+	font-size: 100%;
+}
+
+
+
+.category-badge a{
+	color: #333333;
+	padding: 8px 7px 10px 7px;
+}
+
+
+/* custom category colours */
+
+.badge-graphics{
+	background-color: #E7A945;
+	color: #333333;
+}
+
+.badge-websites{
+	background-color: #DD2486
+}
+.badge-websites a{
+	color: #ffffff;
+}
+
+.badge-video{
+	background-color: #346182;
+}
+
+.badge-video a{
+	color: #ffffff;
+}
+
+.badge-coding{
+	background-color: #46772C;
+}
+.badge-coding a{
+	color: #ffffff;
+}
+.category-header{
+	font-size: 200%;
+	margin-bottom: 2em;
+}
+
+.jumbotron{
+	background-color: rgba(255,255,255,0.85);
+}
+
+.bg-light-trans{
+	background-color: rgba(255,255,255,0.85);
+}
+
+
+
+/*----------------------------------------- */
+/*-----------FRONT PAGE STYLING------------ */
+/*----------------------------------------- */
+
+.front-page-top{
+	background-size: cover;
+    background-position: center center;
+    margin-top: -56px;
+	margin-left: -15px;
+	width: 105%;
+    z-index: 0;
+}
+
+.front-page-title{
+	font-size: 3.5rem;
+}
+
+.front-page-image img{
+	width: 100%;
+	height: auto;
+}
+
+.card-title{
+	color: #333333;
+}
+
+.card-date{
+	font-size: 80%;
+}
+
+.jumbotron h1, p{
+	color: #333333;
+}
+
+.single-post-image-header{
+	background-size:  cover;
+	background-position: center center;
+	min-height: 200px;
+}
+
+
+.bg-shadow{
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+/*----------------------------------------- */
+/*--------------FOOTER STYLING------------- */
+/*----------------------------------------- */
+
+
+
+hr.footer-hr { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: rgba(0,0,0,.30); 
+  border-width: 3px 0 0 0; 
+  border-radius: 9px; 
+} 
+
+.footer-links{
+	display: inline;
+}
+
+.footer-links a{
+	display: inline;
+}
+
+.footer-nav{
+	flex-direction: row;
+}
+
+.footer-nav .nav-link{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+
+/*----------------------------------------- */
+/*-----------RESPONSIVE STYLING------------ */
+/*----------------------------------------- */
+
+
+@media (max-width: 575px)
+{
+	
+	
+	.front-page-title{
+		font-size: 2rem;
+	}
+	
+	.display-3{
+		font-size: 2rem;
+	}
+	
+	.my-sm-0{
+		margin-left: -2em;
+	}
+	
+	
+	
+}
+
+/* ---- when menu changes ---- */
+@media (max-width: 991px){
+	
+	.form-inline .form-control{
+		margin-left: -2em;
+	}
+	
+	.navbar-nav .dropdown-menu{
+		margin-right: 2em;
+	}
+	
+	.navbar-collapse{
+		background-color: rgba(0,0,0,.60);
+	}
+	
+	
+	
+	
+}
+
+@media (min-width: 576px){
+	
+	.card-columns{
+		column-count: 2;
+	}
+}
+
+
+@media (min-width: 991px){
+	.card-columns{
+		column-count: 3;
+	}
+}
