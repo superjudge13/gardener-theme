@@ -18,7 +18,7 @@
 ?>
 
 <body <?php body_class( $custom_classes ); ?> >
-	<div class="container-fluid bg-menu-fade">
+	<div class="container-fluid">
 	<div class="container">
 		<div class="row">
 				<div class="header-logo col d-flex align-items-center">
