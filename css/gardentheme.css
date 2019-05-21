@@ -9,6 +9,17 @@ body.custom-background{
 	background-attachment: fixed!important;
 }
 
+
+/* This is used to break out of rows to go full width  */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw!important;
+  margin-right: -50vw!important;
+}
+
 /*----------------------------------------- */
 /*--------------FONT STYLING--------------- */
 /*----------------------------------------- */
@@ -38,7 +49,9 @@ h1,h2,h3,h4,h5,h6,p,small,ul,li{
 }
 
 
-
+.navbar-bg{
+	background-color: #ffcc33;
+}
 
 
 

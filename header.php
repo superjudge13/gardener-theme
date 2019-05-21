@@ -20,7 +20,7 @@
 <body <?php body_class( $custom_classes ); ?> >
 	<div class="container-fluid">
 	<div class="container">
-		<div class="row">
+		<div class="row pt-3 pb-3">
 				<div class="header-logo col d-flex align-items-center">
 					<a href="" alt="">
 						<img src="<?php echo custom_logo(); ?>" alt="<?php echo(get_bloginfo('name')); ?>" height="100px" width="auto" />
@@ -35,7 +35,7 @@
 		</div>
 		<div class="row menu-row">
 			<div class="col">
-				<nav class="navbar navbar-expand-lg navbar-dark bg-transparent bt-navbar">
+				<nav class="navbar navbar-expand-lg navbar-dark navbar-bg full-width">
 					<div class="container">
 						
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
