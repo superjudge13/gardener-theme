@@ -42,7 +42,6 @@
 								<span class="navbar-toggler-icon"></span>
 							</button>
 								<div class="collapse navbar-collapse" id="navbar-content">
-									<div class="col-md-8">
 									<?php
 									wp_nav_menu( array(
 										'theme_location' => 'menu-1',
@@ -53,18 +52,7 @@
 										'walker'         => new Bootstrap_NavWalker(),
 										'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
 									) );
-									?>
-									</div>
-									<div class="col-md-4">
-                                    <form action="https://gardens.barrywebber.co.uk/" method="get" class="form-inline my-2 my-lg-0 ml-0">
-                                        <!-- <label for="search">Search in </label> -->
-										<div class="col align-self-end text-right">
-											<input class="form-control mr-sm-2 search-nav-in" type="text" name="s" id="search-input" value="" aria-label="Search">
-											<button type="submit" class="btn bg-transparent text-light" id="search-button" type="submit"><i class="fas fa-search"></i></button>
-										</div>
-                                    </form>
-									</div>
-                                    
+									?>	
 								</div>
 					</div><!-- closes .container -->
 				</nav>

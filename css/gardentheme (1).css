@@ -82,21 +82,6 @@ h1,h2,h3,h4,h5,h6,p,small,ul,li{
 	
 }
 
-.search-nav-in{
-	width: 0%!important;
-	opacity: 0;
-}
-
-.search-nav-out{
-	opacity: 1;
-    width:75%!important;
-	-webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
-    transition-property: width, opacity;
-}
-
 
 
 /*----------------------------------------- */
