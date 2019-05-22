@@ -9,6 +9,8 @@ function barrytheme_script_enqueue(){
 	
 	wp_enqueue_style('bootstrapcss', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), '4.0.0', 'all');
 	
+	wp_enqueue_style('fontawesomecss', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', array(), '5.8.2', 'all');
+	
 	wp_enqueue_style('customstylecss', get_template_directory_uri() . '/css/gardentheme.css', array(), '1.0.0', 'all');
 	
 	//js
@@ -135,14 +137,14 @@ function addCategoryBadge($type){
 
 
 
-function wpgood_nav_search($items, $args) {
-    // If this isn't the primary menu, do nothing
-    if( !($args->theme_location == 'menu-1') ) 
-    return $items;
-    // Otherwise, add search form
-    return $items . '<li>' . get_search_form(false) . '</li>';
-}
-add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);
+//function wpgood_nav_search($items, $args) {
+//    // If this isn't the primary menu, do nothing
+//    if( !($args->theme_location == 'menu-1') ) 
+//    return $items;
+//    // Otherwise, add search form
+//    return $items . '<li class="primary-search">' . get_search_form(false) . '</li>';
+//}
+//add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);
 
 
 

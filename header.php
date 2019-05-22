@@ -52,7 +52,15 @@
 										'walker'         => new Bootstrap_NavWalker(),
 										'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
 									) );
-									?>	
+									?>
+                                    
+                                    <form action="https://gardens.barrywebber.co.uk/" method="get" class="form-inline my-2 my-lg-0">
+                                        <!-- <label for="search">Search in </label> -->
+                                        <input class="form-control mr-sm-2" type="text" name="s" id="search" value="" aria-label="Search">
+                                        <button type="submit" class="btn bg-transparent text-light" type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                    
+                                    
 								</div>
 					</div><!-- closes .container -->
 				</nav>
