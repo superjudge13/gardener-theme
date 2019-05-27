@@ -21,40 +21,47 @@
 	<div class="container-fluid">
 	<div class="container">
 		<div class="row pt-3 pb-3">
-				<div class="header-logo col d-flex align-items-center">
+			
+				<div class="header-logo col-md-5 col-sm-12 d-flex align-items-center">
 					<a href="" alt="">
 						<img src="<?php echo custom_logo(); ?>" alt="<?php echo(get_bloginfo('name')); ?>" height="100px" width="auto" />
 					</a>
 				</div>
-				<div class="header-phone col d-flex justify-content-end align-items-center h5 pl-6 pt-2">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-2 text-right pr-3">
-                      <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="col-sm text-nowrap pl-0">
-                      <p class="mb-2">01234 567890</p>
-                    </div>
-                    </div>
-                   <div class="row">
-                    <div class="col-sm-2 text-right">
-                      <i class="far fa-envelope"></i>
-                    </div>
-                    <div class="col-sm text-nowrap pl-0">
-                      <a href="mailto:test@test.com">test@test.com</a>
-                    </div>
-                  </div>
-                </div>
+			
+			
+				<div class="header-phone col-md-4 col-sm-12 d-flex justify-content-end align-items-center h5 pl-6 pt-2">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-2 text-right pr-3">
+								<i class="fas fa-mobile-alt"></i>
+							</div>
+							<div class="col-xs-10 text-nowrap pl-0">
+								<p class="mb-2">01234 567890</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2 text-right">
+								<i class="far fa-envelope"></i>
+							</div>
+							<div class="col-xs-10 text-nowrap pl-2">
+								<a href="mailto:test@test.com">test@test.com</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="header-cta col d-flex justify-content-end align-items-center">
-                	<div class="bg-success w-100 p-3 text-light rounded">
+			
+			
+				<div class="header-cta col d-none d-md-block justify-content-end align-items-center">
+                	<div class="bg-default w-100 p-3 text-light rounded text-right">
                     	<h4>Need Gardening?<br>
-                        <span class="h5 text-muted">We're here to help</span>
+                        <h6>We're here to help</h6>
                         </h4>
                         <hr>
                         <button class="btn btn-primary">Get in touch!</button>
                     </div>
 				</div>
+			
+			
 		</div>
 		<div class="row menu-row">
 			<div class="col">

@@ -20,6 +20,14 @@ body.custom-background{
   margin-right: -50vw!important;
 }
 
+.bg-default{
+	background-color: #4c9d24!important;
+}
+
+.header-cta h4{
+	color: #fff;
+}
+
 /*----------------------------------------- */
 /*--------------FONT STYLING--------------- */
 /*----------------------------------------- */
