@@ -28,6 +28,28 @@ body.custom-background{
 	color: #fff;
 }
 
+.carousel-item-div{
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.carousel-controls{
+	margin-top: -50vh;
+}
+
+.slider-outer{
+	margin-top: -2em;
+	
+}
+
+.carousel-control-next, .carousel-control-prev {
+	justify-content: initial;
+	width: auto;
+}
+
+
 /*----------------------------------------- */
 /*--------------FONT STYLING--------------- */
 /*----------------------------------------- */

@@ -81,7 +81,10 @@ add_theme_support('custom-logo', array(
 ));
 
 add_theme_support('post-thumbnails');
+add_theme_support('title-tag');
 add_theme_support('post-formats', array('aside', 'gallery', 'image', 'video',));
+
+
 
 function custom_excerpt_length( $length ) {
 	return 20;

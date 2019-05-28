@@ -100,7 +100,5 @@
 				</nav>
 			</div><!-- closes .col -->
 		</div><!-- closes .row -->
-		<div class="row">
-			<p>Something new in here</p>
+		<?php get_template_part('parts/slider'); ?>
 			
-		</div>
