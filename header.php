@@ -23,11 +23,16 @@
 		<div class="row pt-3 pb-3">
 			
 				<div class="header-logo col-md-5 col-sm-12 d-flex align-items-center">
-					<a href="" alt="">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo custom_logo(); ?>" alt="<?php echo(get_bloginfo('name')); ?>" height="100px" width="auto" />
 					</a>
 				</div>
 			
+			<?php
+			$page = get_page_by_title( 'Header Info' );
+			$header_id = $page->ID;
+			$hexcolor = get_field('cta_colour', $header_id);
+			?>
 			
 				<div class="header-phone col-md-4 col-sm-12 d-flex justify-content-end align-items-center h5 pl-6 pt-2">
 					<div class="container">
@@ -36,7 +41,7 @@
 								<i class="fas fa-mobile-alt"></i>
 							</div>
 							<div class="col-xs-10 text-nowrap pl-0">
-								<p class="mb-2">01234 567890</p>
+								<p class="mb-2"><?php the_field('business_phone_number', $header_id); ?></p>
 							</div>
 						</div>
 						<div class="row">
@@ -44,7 +49,7 @@
 								<i class="far fa-envelope"></i>
 							</div>
 							<div class="col-xs-10 text-nowrap pl-2">
-								<a href="mailto:test@test.com">test@test.com</a>
+								<a href="mailto:test@test.com"><?php the_field('business_email', $header_id); ?></a>
 							</div>
 						</div>
 					</div>
@@ -52,12 +57,13 @@
 			
 			
 				<div class="header-cta col d-none d-md-block justify-content-end align-items-center">
-                	<div class="bg-default w-100 p-3 text-light rounded text-right">
-                    	<h4>Need Gardening?<br>
-                        <h6>We're here to help</h6>
+		
+                <div class="bg-cta w-100 p-3 text-light rounded text-right" style="background-color:<?php the_field('cta_colour', $header_id); ?>"> 
+                    	<h4><?php the_field('cta_title', $header_id); ?><br>
+                        <h6><?php the_field('cta_copy', $header_id); ?></h6>
                         </h4>
                         <hr>
-                        <button class="btn btn-primary">Get in touch!</button>
+                        <button class="btn btn-primary"><?php the_field('cta_button', $header_id); ?></button>
                     </div>
 				</div>
 			
@@ -100,5 +106,4 @@
 				</nav>
 			</div><!-- closes .col -->
 		</div><!-- closes .row -->
-		<?php get_template_part('parts/slider'); ?>
 			
